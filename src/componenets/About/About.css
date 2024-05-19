@@ -1,0 +1,102 @@
+.about {
+  background-color: var(--background-overlay);
+  color: var(--text-color);
+  padding: 50px 0;
+  position: relative;
+}
+
+.about .about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .about .about-content {
+    flex-direction: column;
+  }
+}
+
+.about-content .about-content-img {
+  background-color: var(--text-color);
+  border-radius: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  align-self: flex-start;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .about .about-content .about-content-img {
+    width: 50%;
+    align-self: center;
+  }
+}
+
+.about-content .about-content-header {
+  color: var(--orange);
+}
+
+.about-content .about-name {
+  color: var(--orange);
+  font-size: 18px;
+  font-weight: 700;
+}
+.about .resume-btn {
+  text-align: left;
+  margin-top: 30px;
+}
+
+/* .about {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--orange);
+  border: none;
+  color: var(--blue-card);
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color var(--transition), box-shadow var(--transition);
+  box-shadow: 0 0 10px var(--orange), 0 0 20px var(--orange);
+} */
+
+/* Example of a new color scheme */
+:root {
+  --primary-color: #007bff; /* New color for the button */
+  --primary-color-hover: #0056b3; /* Hover color for the button */
+  --text-color: #ffffff; /* Text color for the button */
+  --transition: 0.3s ease; /* Transition timing */
+}
+
+.resume-btn .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--text-color);
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color var(--transition), box-shadow var(--transition);
+  box-shadow: 0 0 10px var(--primary-color), 0 0 20px var(--primary-color);
+}
+
+.resume-btn .btn:hover {
+  background-color: var(--primary-color-hover);
+  box-shadow: 0 0 10px var(--primary-color-hover),
+    0 0 20px var(--primary-color-hover);
+}
+
+.about .resume-btn .btn:hover {
+  box-shadow: 0px 0px 15px var(--gray), 0px 0px 25px var(--orange),
+    0px 0px 35px var(--gray);
+}
