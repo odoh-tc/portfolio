@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import SectionHeader from "../SectionHeader/SectionHeader";
-import exhustedMan from "../../assets/maximo.jpg";
+import exhustedMan from "../../assets/pix.jpeg";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import Resume from "../../assets/maximo_cv.pdf";
 import ReactGA from "react-ga4";
