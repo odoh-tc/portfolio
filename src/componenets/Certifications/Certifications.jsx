@@ -4,6 +4,8 @@ import Certification from "./Certification";
 import "./Certifications.css";
 import cert1 from "../../assets/alx.png";
 import cert2 from "../../assets/hng.png";
+import cert3 from "../../assets/fast_udemy.jpg";
+
 function Certifications() {
   return (
     <section className="certifications" id="certifications">
@@ -23,6 +25,15 @@ function Certifications() {
             provider={"HNG"}
             date={"02 March 2024"}
             link={"https://certgo.app/c-b67e13ca"}
+          />
+          <Certification
+            img={cert3}
+            title={"FastAPI Course"}
+            provider={"UDEMY"}
+            date={"23 May 2024"}
+            link={
+              "https://www.udemy.com/certificate/UC-d62e5cb4-174e-4099-a358-4005848c7889/"
+            }
           />
         </div>
       </div>
