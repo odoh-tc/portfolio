@@ -2,6 +2,7 @@ import TodoImage from "../../assets/project_images/todo.png";
 import EcommerceImage from "../../assets/project_images/comm.jpeg";
 import InveImage from "../../assets/project_images/inventer.png";
 import FileImage from "../../assets/project_images/file.jpeg";
+import ChatImage from "../../assets/project_images/chat.jpeg";
 export const projectsData = [
   {
     title: "E-commerce App",
@@ -21,6 +22,16 @@ export const projectsData = [
     githubUrl: "https://github.com/odoh-tc/file_uploader",
     liveUrl: "https://github.com/odoh-tc/file_uploader",
     techStack: ["FastAPI", "MySQL", "SQLAlchemy", "JWT"],
+    livePreview: true,
+  },
+  {
+    title: "Chat Application",
+    description:
+      "This is a simple chat application built with FastAPI. It allows users to connect to a chat room via WebSocket, send messages, and receive messages instantly. The application provides a seamless user experience with features like WebSocket connection management, message broadcasting, and graceful disconnection handling.",
+    imgUrl: ChatImage,
+    githubUrl: "https://github.com/odoh-tc/chat_app",
+    liveUrl: "https://chat-app-98z7.onrender.com",
+    techStack: ["FastAPI", "WebSocket", "Jinja2 Templates", "JSON"],
     livePreview: true,
   },
   {
