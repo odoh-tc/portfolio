@@ -1,13 +1,13 @@
 import React from "react";
-import Icon from "@mdi/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFilePdf } from "@fortawesome/free-solid-svg-icons";
 import {
-  mdiFilePdfBox,
-  mdiGithub,
-  mdiLinkedin,
-  mdiWhatsapp,
-  mdiTwitter,
-} from "@mdi/js";
-import "./SocialLinks.css";
+  faGithub,
+  faLinkedin,
+  faWhatsapp,
+  faXTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import "./SocialLinks.css"; // Make sure this is the correct path to your CSS file
 import ReactGA from "react-ga4";
 
 function SocialLinks({ fixed }) {
@@ -23,12 +23,12 @@ function SocialLinks({ fixed }) {
       <ul className="nav-links">
         <li>
           <a
-            href="https://docs.google.com/document/d/1HVsbn1HmXHPnMIEIpDlVyLptMLjRyXIWz3gSV7Whnik/edit?usp=sharing"
+            href="https://drive.google.com/uc?export=download&id=1XGRAZ-zTLRxDbfdPPxiyX4SXkcCgRkWx"
             rel="noreferrer"
             target="_blank"
             onClick={() => trackSocialLinkClick("Resume")}
           >
-            <Icon path={mdiFilePdfBox} size={1} color="#FF5722" />
+            <FontAwesomeIcon icon={faFilePdf} size="lg" color="#FF5722" />
           </a>
         </li>
         <li>
@@ -38,7 +38,7 @@ function SocialLinks({ fixed }) {
             target="_blank"
             onClick={() => trackSocialLinkClick("GitHub")}
           >
-            <Icon path={mdiGithub} size={1} color="#333333" />
+            <FontAwesomeIcon icon={faGithub} size="lg" color="#333333" />
           </a>
         </li>
         <li>
@@ -48,7 +48,7 @@ function SocialLinks({ fixed }) {
             target="_blank"
             onClick={() => trackSocialLinkClick("LinkedIn")}
           >
-            <Icon path={mdiLinkedin} size={1} color="#0a66c2" />
+            <FontAwesomeIcon icon={faLinkedin} size="lg" color="#0a66c2" />
           </a>
         </li>
         <li>
@@ -56,7 +56,7 @@ function SocialLinks({ fixed }) {
             href="tel:+2348105583181"
             onClick={() => trackSocialLinkClick("WhatsApp")}
           >
-            <Icon path={mdiWhatsapp} size={1} color="#25D366" />
+            <FontAwesomeIcon icon={faWhatsapp} size="lg" color="#25D366" />
           </a>
         </li>
         <li>
@@ -66,7 +66,7 @@ function SocialLinks({ fixed }) {
             target="_blank"
             onClick={() => trackSocialLinkClick("Twitter")}
           >
-            <Icon path={mdiTwitter} size={1} color="#1DA1F2" />
+            <FontAwesomeIcon icon={faXTwitter} size="lg" color="#1DA1F2" />
           </a>
         </li>
       </ul>
