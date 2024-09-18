@@ -23,7 +23,7 @@ function SocialLinks({ fixed }) {
       <ul className="nav-links">
         <li>
           <a
-            href="https://drive.google.com/uc?export=download&id=1XGRAZ-zTLRxDbfdPPxiyX4SXkcCgRkWx"
+            href="https://drive.google.com/uc?export=download&id=1As977zo3hzG5FRs17UYjjF3OG7vs_F2-"
             rel="noreferrer"
             target="_blank"
             onClick={() => trackSocialLinkClick("Resume")}
@@ -53,7 +53,7 @@ function SocialLinks({ fixed }) {
         </li>
         <li>
           <a
-            href="tel:+2348105583181"
+            href="tel:+2347068670947"
             onClick={() => trackSocialLinkClick("WhatsApp")}
           >
             <FontAwesomeIcon icon={faWhatsapp} size="lg" color="#25D366" />

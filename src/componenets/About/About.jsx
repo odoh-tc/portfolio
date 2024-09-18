@@ -3,7 +3,7 @@ import "./About.css";
 import SectionHeader from "../SectionHeader/SectionHeader";
 import exhustedMan from "../../assets/pix.jpeg";
 import SocialLinks from "../SocialLinks/SocialLinks";
-import Resume from "../../assets/tochukwu_cv.pdf";
+import Resume from "../../assets/Tochukwu_Odoh_CV.pdf";
 import ReactGA from "react-ga4";
 
 const About = () => {
@@ -28,29 +28,21 @@ const About = () => {
 
             <p>
               Hello! I'm <span className="about-name">Tochukwu Odoh</span>, a
-              dedicated Pharmacist who has also ventured into the tech world as
-              a backend specialist. I recently graduated from the ALX Software
-              Engineering program, specializing in backend development.
-              Currently, I am advancing my skills in the ALTSchool Software
-              Engineering program, focusing on the backend track.
+              creative and detail-oriented software engineer with a strong focus
+              on backend development. My expertise centers around building
+              robust, scalable systems using Python, FastAPI, along with their
+              extensive ecosystems of tools and libraries, allowing for
+              efficient and maintainable backend solutions. I am also constantly
+              expanding my knowledge in DevOps to optimize and deploy
+              high-performing software systems.
             </p>
             <br />
             <p>
-              I have successfully completed a Docker and Kubernetes course by
-              HNG, which has equipped me with robust skills in containerization
-              and orchestration. My technical proficiency includes working with
-              Python and FastAPI, and I am well-versed in database management
-              systems like MySQL and PostgreSQL. Additionally, I have experience
-              with Docker, Kubernetes, and a foundational understanding of
-              front-end technologies like React.
-            </p>
-            <br />
-            <p>
-              My diverse background in healthcare and software engineering
-              allows me to bring a unique perspective to the tech projects I
-              work on. I am passionate about leveraging my skills to contribute
-              to meaningful and impactful projects, blending the precision of
-              pharmaceuticals with the innovation of technology.
+              Coming from a background in healthcare, I bring a unique
+              perspective that combines precision and problem-solving with a
+              passion for technology. I am driven by the opportunity to
+              contribute to impactful software projects that solve real-world
+              problems and help push innovation forward.
             </p>
 
             <SocialLinks />

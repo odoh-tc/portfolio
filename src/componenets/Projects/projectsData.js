@@ -1,10 +1,33 @@
-import TodoImage from "../../assets/project_images/todo.png";
+// import TodoImage from "../../assets/project_images/todo.png";
 import EcommerceImage from "../../assets/project_images/comm.jpeg";
 import InveImage from "../../assets/project_images/inventer.png";
 import FileImage from "../../assets/project_images/file.jpeg";
-import ChatImage from "../../assets/project_images/chat.jpeg";
+// import ChatImage from "../../assets/project_images/chat.jpeg";
 import WeatherImage from "../../assets/project_images/weather.jpeg";
+import MovieImage from "../../assets/project_images/movie.jpeg";
+import MessagingImage from "../../assets/project_images/rabbit.jpeg";
+
 export const projectsData = [
+  {
+    title: "Movie Listing API",
+    description:
+      "A FastAPI-based API where users can browse, rate, and comment on movies. It features JWT authentication, email verification, rating and commenting functionalities, along with advanced filtering, sorting, and search capabilities. Rate limiting ensures fair usage across endpoints.",
+    imgUrl: MovieImage,
+    githubUrl: "https://github.com/odoh-tc/movie_listing_api",
+    liveUrl: "https://github.com/odoh-tc/movie_listing_api",
+    techStack: ["FastAPI", "PostgreSQL", "Docker", "JWT"],
+    livePreview: true,
+  },
+  {
+    title: "Messaging System with RabbitMQ/Celery",
+    description:
+      "This project implements a messaging system using RabbitMQ for queuing, Celery for asynchronous task processing, and a FastAPI-based Python application behind Nginx. Ngrok is used to expose the local application for external testing. The system supports sending emails via RabbitMQ queues, logging server activities, and routing traffic through Nginx.",
+    imgUrl: MessagingImage,
+    githubUrl: "https://github.com/odoh-tc/messaging_system",
+    liveUrl: "https://github.com/odoh-tc/messaging_system",
+    techStack: ["FastAPI", "RabbitMQ", "Celery", "Nginx", "Ngrok"],
+    livePreview: true,
+  },
   {
     title: "E-commerce API",
     description:
@@ -36,16 +59,6 @@ export const projectsData = [
     livePreview: true,
   },
   {
-    title: "Chat Application",
-    description:
-      "This is a simple chat application built with FastAPI. It allows users to connect to a chat room via WebSocket, send messages, and receive messages instantly. The application provides a seamless user experience with features like WebSocket connection management, message broadcasting, and graceful disconnection handling.",
-    imgUrl: ChatImage,
-    githubUrl: "https://github.com/odoh-tc/chat_app",
-    liveUrl: "https://chat-app-98z7.onrender.com",
-    techStack: ["FastAPI", "WebSocket", "Jinja2 Templates", "JSON"],
-    livePreview: true,
-  },
-  {
     title: "Invent Management App",
     description:
       "This is an inventory management application. This app allows users to manage their inventory efficiently, enabling them to add, update, delete, and search for products easily.",
@@ -53,16 +66,6 @@ export const projectsData = [
     githubUrl: "https://github.com/odoh-tc/Inventory_app",
     liveUrl: "https://invent-api.onrender.com/docs",
     techStack: ["FastAPI", "Tortoise ORM", "React", "SQLite"],
-    livePreview: true,
-  },
-  {
-    title: "Task Manager",
-    description:
-      "A simple Todo List application built with FastAPI. This app allows users to create, edit, delete, and view todo items. The backend is developed with FastAPI, while the frontend uses Jinja2 templates for rendering.",
-    imgUrl: TodoImage,
-    githubUrl: "https://github.com/odoh-tc/fastapi_Todo_list",
-    liveUrl: "https://fastapi-todo-list.onrender.com/auth/",
-    techStack: ["FastAPI", "SQLite", "Jinja2 templates", "JWT"],
     livePreview: true,
   },
 ];
